@@ -1,6 +1,6 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Alexandar" << std::endl;
+    std::cout << "Final Test" << std::endl;
     return 0;
 }
