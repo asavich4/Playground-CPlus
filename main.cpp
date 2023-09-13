@@ -1,6 +1,12 @@
 #include <iostream>
 
+using namespace std;
+
 int main() {
-    std::cout << "Final Test" << std::endl;
+    int num = 1;
+    string word = "test";
+    string space = " ";
+
+    cout << num << space << word << endl;
     return 0;
 }
