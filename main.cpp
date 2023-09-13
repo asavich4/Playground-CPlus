@@ -3,10 +3,10 @@
 using namespace std;
 
 int main() {
-    int num = 1;
-    string word = "test";
-    string space = " ";
+    string name;
 
-    cout << num << space << word << endl;
+    cout << "What is your name:" << endl;
+    cin >> name;
+    cout << "your name is " << name << " and your name "<< name.length() << " long" << endl;
     return 0;
 }
