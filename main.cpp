@@ -2,19 +2,19 @@
 
 using namespace std;
 
-void function(){
-    cout << "play";
+void area(int w, int l){
+    int answerArea = w * l;
+    cout << "The area is " << answerArea << endl;
+}
+
+void cubesSq(int w, int l, int h){
+    int cube = w * l * h;
+    cout << "Cubes Squared is " << cube;
 }
 
 int main() {
-    int test[] = {1,2,3,5,6, 7, 4,3,3,5};
-    int size = sizeof(test) / sizeof(test[0]);
+    area(2, 5);
+    cubesSq (3, 7, 9);
 
-    for(int i; i < size; i++){
-        function();
-        cout << " " << test[i] << " ";
-    }
-
-    cout << " the size is " << size;
     return 0;
 }
