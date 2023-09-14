@@ -3,10 +3,9 @@
 using namespace std;
 
 int main() {
-    string name;
+    int test[] = {1,2,3,5,6, 7, 4,3,3,5};
+    int size = sizeof(test) / sizeof(test[0]);
 
-    cout << "What is your name:" << endl;
-    cin >> name;
-    cout << "your name is " << name << " and your name "<< name.length() << " long" << endl;
+    cout << size;
     return 0;
 }
