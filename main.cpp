@@ -13,8 +13,18 @@ void cubesSq(int w, int l, int h){
 }
 
 int main() {
-    area(2, 5);
-    cubesSq (3, 7, 9);
+    int width;
+    int length;
+    int height;
+    cout << "Enter the width: ";
+    cin >> width;
+    cout << "Enter the length: ";
+    cin >> length;
+    cout << "Enter the height: ";
+    cin >> height;
+
+    area(width, length);
+    cubesSq (width, length, height);
 
     return 0;
 }
