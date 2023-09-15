@@ -9,22 +9,28 @@ void area(int w, int l){
 
 void cubesSq(int w, int l, int h){
     int cube = w * l * h;
-    cout << "Cubes Squared is " << cube;
+    cout << "Cubes Squared is " << cube << endl;
+}
+
+void people(string name, int age){
+    cout << "Your name is " << name << " and you are " << age << " years old!" << endl;
 }
 
 int main() {
-    int width;
-    int length;
-    int height;
-    cout << "Enter the width: ";
-    cin >> width;
-    cout << "Enter the length: ";
-    cin >> length;
-    cout << "Enter the height: ";
-    cin >> height;
+    int width = 5;
+    int length = 7;
+    int height = 9;
 
     area(width, length);
     cubesSq (width, length, height);
+
+    string person;
+    int personAge;
+    cout << "What is your name? " << endl;
+    cin >> person;
+    cout << "What is your age? " << endl;
+    cin >> personAge;
+    people(person , personAge);
 
     return 0;
 }
