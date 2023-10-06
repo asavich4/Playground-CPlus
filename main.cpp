@@ -5,19 +5,36 @@
 
 using namespace std;
 
+class Node{
+public:
+    int value;
+    Node* Next;
+};
 
-int main(){
-    int x = 4;
-    cout << x << endl;
-    cout << &x << endl;
-
-    int *y = &x;
-    cout << y << endl;
-    cout << *y << endl;
-
-    *y = 2;
-    cout << y << endl;
-    cout << *y << endl;
-    cout << x << endl;
-    cout << &y << endl;
+void printList(Node*n){
+    while(n != NULL){
+        cout << n->value << endl;
+        n = n->Next;
+    }
 }
+
+int main() {
+    Node* head = new Node();
+    Node* second = new Node();
+    Node* third = new Node();
+
+    head->value = 1;
+    head->Next = second;
+
+    second->value = 2;
+    second->Next = third;
+
+    third->value = 3;
+    third->Next = NULL;
+
+    printList(head);
+
+    return 0;
+}
+
+
